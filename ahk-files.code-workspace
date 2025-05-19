@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true
+	},
+
+	"extensions": {
+		"recommendations": ["mark-wiemer.vscode-autohotkey-plus-plus"]
+	}
+}
