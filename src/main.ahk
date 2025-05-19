@@ -44,8 +44,9 @@
 ; Mac の control + j,k,l,; が Windows では win + j,k,l,; になるので、macと同じ位置で使えるようにする
 #j::^j
 #k::^k
-#l::^l
-#;::^;
+; win + l は画面ロック機能で上書きできない
+; #l::^l
+#;:: Send "{F10}"
 
 ; Mac の cmd + tab 的に使えるように変更
 ; cmd + shift ではうまくいかなかったので caps lock で代用
