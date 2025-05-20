@@ -40,22 +40,20 @@
 ; --------------------------------------------
 #HotIf WinActive("ahk_exe slack.EXE")
 
-; 戻る（Ctrl + [）の設定
-^sc01b:: {
-    ; ule4Jis の兼ね合いで Ctrl + ] を押した時にもこのキーが発火するので、その場合は次に進むようにケア
-    if (Utils.isActiveWindow(Configs.windowTitles.ule4Jis) && (A_PriorKey == "LControl" || A_PriorKey == "[")) {
-        Send "!{Right}"
-        return
-    }
-
-    Send "!{Left}"
-    return
-}
-
-; 進む（Ctrl + ]）の設定
-^sc02b:: {
-    Send "!{Right}"
-}
+; ctrl + [ で go back
+^sc01A::!Left
+; ctrl + ] で go forward
+^sc02b::!Right
 
 #HotIf
+; ============================================
+; VSCode 専用
 ; --------------------------------------------
+#HotIf WinActive("ahk_exe Code.exe")
+
+; ctrl + [ で go back
+^sc01A::!Left
+; ctrl + ] で go forward
+^sc02b::!Right
+
+#HotIf
