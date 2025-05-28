@@ -54,8 +54,8 @@ LCtrl & Tab::AltTab
 LCtrl & sc03A::ShiftAltTab ; sc03A=caps lock
 
 ; 削除系
-!Backspace:: Send "{LCtrl Down}{Backspace}{LCtrl Up}" ; 単語削除
-^Backspace:: Send "{LShift Down}{Home Down}{Backspace}{Home Up}{LShift Up}" ; 行頭まで削除
+~!Backspace:: Send "{LCtrl Down}{Backspace}{LCtrl Up}" ; 単語削除
+~^Backspace:: Send "{LShift Down}{Home Down}{Backspace}{Home Up}{LShift Up}" ; 行頭まで削除
 ;=============================================
 ; IME や Ule4Jis など文字入力関連の設定
 ;---------------------------------------------
