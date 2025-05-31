@@ -108,12 +108,12 @@ LCtrl & sc03A::ShiftAltTab ; sc03A=caps lock
     Send("{LWin Up}")
 }
 
-; ウィンドウを FancyZones 上の左に移動
-^!j:: {
-    Send("{LWin Down}")
-    Send("{Left}")
-    Send("{LWin Up}")
-}
+; ; ウィンドウを FancyZones 上の左に移動
+; ^!j:: {
+;     Send("{LWin Down}")
+;     Send("{Left}")
+;     Send("{LWin Up}")
+; }
 ; ウィンドウを FancyZones 上の右に移動
 ^!k:: {
     Send("{LWin Down}")
